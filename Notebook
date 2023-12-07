@@ -1,0 +1,40 @@
+# Python-Fix 
+QUESTION 1 PROBLEM
+tesla_data = tesla.history(period="max")
+ttributeError                            Traceback (most recent call last)
+/tmp/ipykernel_1420/1236814050.py in <module>
+----> 1 tesla_data = tesla.history(period=max)
+
+~/conda/envs/python/lib/python3.7/site-packages/yfinance/base.py in history(self, period, interval, start, end, prepost, actions, auto_adjust, back_adjust, proxy, rounding, tz, timeout, **kwargs)
+    143         """
+    144 
+--> 145         if start or period is None or period.lower() == "max":
+    146             if start is None:
+    147                 start = -631159200
+
+AttributeError: 'builtin_function_or_method' object has no attribute 'lower'
+
+QUESTION 2 PROBLEM
+tesla_revenue = pd.DataFrame(columns=["Date", "Revenue"])
+for row in soup.find_all("tbody")
+    col = row.find_all("td")
+    date = col[0]
+    revenue = col[1]
+
+tesla_revenue = telsa_revenue.append({"Date":date, "Revenue":revenue}, ignore_index=True)
+ERROR: Invalid syntax
+
+QUESTION 3 PROBLEM
+gme_data = gamestop.history(period=max)
+AttributeError                            Traceback (most recent call last)
+/tmp/ipykernel_1420/1215351774.py in <module>
+----> 1 gme_data = gamestop.history(period=max)
+
+~/conda/envs/python/lib/python3.7/site-packages/yfinance/base.py in history(self, period, interval, start, end, prepost, actions, auto_adjust, back_adjust, proxy, rounding, tz, timeout, **kwargs)
+    143         """
+    144 
+--> 145         if start or period is None or period.lower() == "max":
+    146             if start is None:
+    147                 start = -631159200
+
+AttributeError: 'builtin_function_or_method' object has no attribute 'lower'
